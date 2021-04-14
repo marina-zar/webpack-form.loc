@@ -1,0 +1,17 @@
+/****************************Variables*****************************/
+$mainColor: #054b41;
+
+
+.box {
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  border: 1px solid $mainColor;
+
+  h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 48px;
+    text-align: center;
+    color: $mainColor;
+  }
+}
