@@ -28,24 +28,13 @@ const optimization = () => {
     return config
 };
 
-const filename = ext => isDev ? `[name].${ext}` : `[name].[fullhash].${ext}`
+const filename = ext => isDev ? `[name].${ext}` : `[name].[fullhash].${ext}`;
 
 const cssLoaders = extra => {
     let loaders = [
         MiniCssExtractPlugin.loader,
         'css-loader',
-        {
-            loader: 'postcss-loader',
-            options: {
-                postcssOptions: {
-                    plugins: function () {
-                        return [
-                            require('autoprefixer')
-                        ];
-                    }
-                }
-            }
-        }
+
     ];
 
     if (extra) {
@@ -133,9 +122,9 @@ let conf = {
 };
 
 module.exports = (env, options) => {
-    // let isProd = options.mode === 'production';
+    let isProd = options.mode === 'production';
     conf.devtool = isProd ? false : 'eval-cheap-module-source-map';
     conf.target = isProd ? 'browserslist' : 'web';
     return conf;
-}
+};
 

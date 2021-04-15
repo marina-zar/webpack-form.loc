@@ -37,43 +37,46 @@
         </p>
         <div class="form__simple simple-form">
             <h4 class="simple-form__title title">Simple Forms</h4>
-            <p class="simple-form__subtitle"></p>
-            <form action="http://jsonplaceholder.typicode.com/psts" method="post">
+            <form action="http://jsonplaceholder.typicode.com/posts" method="post">
                 <div class="simple-form__block">
                     <label for="form1">First Name</label>
-                    <input type="text" id="form1" placeholder="Catalin" required>
+                    <input type="text" id="form1" placeholder="Catalin" required name="First Name">
                 </div>
                 <div class="simple-form__block">
                     <label for="form2">Last Name</label>
-                    <input type="text" id="form2" placeholder="Vasile" required>
+                    <input type="text" id="form2" placeholder="Vasile" required name="Last Name">
                 </div>
                 <div class="simple-form__block">
                     <label for="form3">Email Address</label>
-                    <input type="email" id="form3" placeholder="contact@catalin.me" required>
+                    <input type="email" id="form3" placeholder="contact@catalin.me" required name="Email Address">
                 </div>
                 <div class="simple-form__block">
                     <label for="form4">Password</label>
-                    <input type="password" id="form4" placeholder="Password" required>
+                    <input type="password" id="form4" placeholder="Password" required name="Password">
                 </div>
                 <div class="simple-form__block">
                     <label for="form5">Location</label>
-                    <input type="text" id="form5" placeholder="Location"required>
+                    <input type="text" id="form5" placeholder="Location" required name="Location">
                 </div>
                 <div class="simple-form__block">
-                    <label for="form6">State</label>
-                    <select type="text" id="form6">
-                        <option value="Choose one" selected>Choose one</option>
-                        <option value="">Alabama</option>
-                        <option value="">Alaska</option>
-                        <option value="">Arizona</option>
-                        <option value="">Arkansas</option>
-                        <option value="">California</option>
-                        <option value="">Colorado</option>
-                        <option value="">Connecticut</option>
-                        <option value="">Delaware</option>
-                    </select>
-                    <label for="form7">Zip Code</label>
-                    <input type="number" id="form7" placeholder="Zip Code" required>
+                    <div class="">
+                        <label for="form6">State</label>
+                        <select type="text" id="form6" name="State">
+                            <option value="Choose one" selected>Choose one</option>
+                            <option value="Alabama">Alabama</option>
+                            <option value="Alaska">Alaska</option>
+                            <option value="Arizona">Arizona</option>
+                            <option value="Arkansas">Arkansas</option>
+                            <option value="California">California</option>
+                            <option value="Colorado">Colorado</option>
+                            <option value="Connecticut">Connecticut</option>
+                            <option value="Delaware">Delaware</option>
+                        </select>
+                    </div>
+                    <div class="">
+                        <label for="form7">Zip Code</label>
+                        <input type="number" id="form7" placeholder="Zip Code" required>
+                    </div>
                 </div>
 
                 <button type="submit">Submit Form</button>
