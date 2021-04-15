@@ -29,7 +29,7 @@
 
 </div>
 <section class="form">
-    <div class="container">
+    <div class="container-sm">
         <h2 class="form__title title">Form Controls</h2>
         <p class="form__subtitle">
             All form controls are improved with micro-transitions and shadows that
@@ -38,10 +38,45 @@
         <div class="form__simple simple-form">
             <h4 class="simple-form__title title">Simple Forms</h4>
             <p class="simple-form__subtitle"></p>
-            <form action="">
-                <label for="form1"></label>
-                <input type="text" id="form1">
-                <button></button>
+            <form action="http://jsonplaceholder.typicode.com/psts" method="post">
+                <div class="simple-form__block">
+                    <label for="form1">First Name</label>
+                    <input type="text" id="form1" placeholder="Catalin" required>
+                </div>
+                <div class="simple-form__block">
+                    <label for="form2">Last Name</label>
+                    <input type="text" id="form2" placeholder="Vasile" required>
+                </div>
+                <div class="simple-form__block">
+                    <label for="form3">Email Address</label>
+                    <input type="email" id="form3" placeholder="contact@catalin.me" required>
+                </div>
+                <div class="simple-form__block">
+                    <label for="form4">Password</label>
+                    <input type="password" id="form4" placeholder="Password" required>
+                </div>
+                <div class="simple-form__block">
+                    <label for="form5">Location</label>
+                    <input type="text" id="form5" placeholder="Location"required>
+                </div>
+                <div class="simple-form__block">
+                    <label for="form6">State</label>
+                    <select type="text" id="form6">
+                        <option value="Choose one" selected>Choose one</option>
+                        <option value="">Alabama</option>
+                        <option value="">Alaska</option>
+                        <option value="">Arizona</option>
+                        <option value="">Arkansas</option>
+                        <option value="">California</option>
+                        <option value="">Colorado</option>
+                        <option value="">Connecticut</option>
+                        <option value="">Delaware</option>
+                    </select>
+                    <label for="form7">Zip Code</label>
+                    <input type="number" id="form7" placeholder="Zip Code" required>
+                </div>
+
+                <button type="submit">Submit Form</button>
             </form>
         </div>
     </div>
