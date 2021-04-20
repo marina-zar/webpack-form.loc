@@ -93,28 +93,65 @@
             toggle switch control.
         </p>
         <div class="controls__box box-controls">
-            <div class="box-controls__block">
-                <h4 class="simple-form__title title">Checkboxes</h4>
+            <div class="box-controls__block block__checkbox">
+                <h4 class="box-controls__title title">Checkboxes</h4>
                 <fieldset>
-                <input type="checkbox" id="checkbox1" name="food" value="pizza">
-                <label for="checkbox1">Pizza</label>
-            </fieldset>
+                    <input type="checkbox" id="checkbox1" name="food" value="pizza">
+                    <label for="checkbox1">Pizza</label>
+                </fieldset>
                 <fieldset>
-                    <input type="checkbox" id="checkbox2">
+                    <input type="checkbox" id="checkbox2" name="food" value="pasta">
                     <label for="checkbox2">Pasta</label>
                 </fieldset>
                 <fieldset>
-                    <input type="checkbox" id="checkbox3">
+                    <input type="checkbox" id="checkbox3" name="food" value="burgers">
                     <label for="checkbox3">Burgers</label>
                 </fieldset>
                 <fieldset>
-                    <input type="checkbox" id="checkbox4">
+                    <input type="checkbox" id="checkbox4" name="food" value="tacos" disabled>
                     <label for="checkbox4">Tacos</label>
                 </fieldset>
             </div>
 
-            <div class="radio"></div>
-            <div class="toggle"></div>
+            <div class="box-controls__block block__radio">
+                <h4 class="box-controls__title title">Radio Buttons</h4>
+                <fieldset>
+                    <input type="radio" id="radio1" name="food" value="cookies">
+                    <label for="radio1">Cookies</label>
+                </fieldset>
+                <fieldset>
+                    <input type="radio" id="radio2" name="food" value="pancakes">
+                    <label for="radio2">Pancakes</label>
+                </fieldset>
+                <fieldset>
+                    <input type="radio" id="radio3" name="food" value="chocolate">
+                    <label for="radio3">Chocolate</label>
+                </fieldset>
+                <fieldset>
+                    <input type="radio" id="radio4" name="food" value="milkshake" disabled>
+                    <label for="radio4">Milkshake</label>
+                </fieldset>
+            </div>
+
+            <div class="box-controls__block">
+                <h4 class="box-controls__title title">Toggles</h4>
+                <fieldset class="box-controls__switch">
+                    <input type="checkbox" id="toggle-btn1" class="toggle-btn" name="game" value="rockets">
+                    <label for="toggle-btn1" class="slider round">Rockets</label>
+                </fieldset>
+                <fieldset class="box-controls__switch">
+                    <input type="checkbox" id="toggle-btn2" class="toggle-btn" name="game" value="lasers">
+                    <label for="toggle-btn2" class="slider round">Lasers</label>
+                </fieldset>
+                <fieldset class="box-controls__switch">
+                    <input type="checkbox" id="toggle-btn3" class="toggle-btn" name="game" value="hal 9K">
+                    <label for="toggle-btn3" class="slider round">HAL 9K</label>
+                </fieldset>
+                <fieldset class="box-controls__switch">
+                    <input type="checkbox" id="toggle-btn4" class="toggle-btn" name="game" value="ultron" disabled>
+                    <label for="toggle-btn4" class="slider round">Ultron</label>
+                </fieldset>
+            </div>
         </div>
     </div>
 </section>
