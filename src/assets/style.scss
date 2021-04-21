@@ -1,3 +1,4 @@
+
 /****************************Other styles*****************************/
 .box {
   padding: 20px;
@@ -38,6 +39,7 @@ body {
   font-size: 25px;
   color: $mainColor;
   background-color: #fafafa;
+  font-weight: 300;
   @media (max-width: $md3 + px) {
     font-size: 20px;
   }
@@ -136,7 +138,7 @@ form {
       height: 60px;
       font-size: 20px;
       padding: 0 20px;
-      border: 1px solid #becad6;
+      border: 1.78px solid #becad6;
       border-radius: 8px;
       background-color: #fff;
       outline: none;
@@ -147,7 +149,7 @@ form {
       &:focus{
         filter: drop-shadow(0px 2px 2px rgba(0,0,0,0.06)) drop-shadow(0px 6px 10px rgba(0,123,255,0.1));
         background-color: #ffffff;
-        border: 1.7851985730376612px solid #007bff;
+        border: 1.78px solid #007bff;
       }
 
     }
@@ -168,6 +170,7 @@ form {
     color: #fff;
     font-size: 20px;
     border: 2px transparent solid;
+    transition: .4s;
     @media (max-width: $md2 + px) {
       display: block;
       margin: 0 auto;
@@ -176,7 +179,7 @@ form {
       width: 100%;
     }
     &:hover {
-      background-color: rgba(0, 125, 255, 0.34);
+      background-color: rgba(0, 125, 255, 0.2);
       color: #005ebb;
       border: 2px #005ebb solid;
     }
@@ -342,4 +345,57 @@ form {
     vertical-align: middle;
     margin-left: 10px;
   }
+}
+
+.controls__custom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  fieldset {
+    flex: 0 1 47%;
+    label {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+/****************************Choices JS*****************************/
+
+.choices[data-type*=select-one]:before {
+  content: '';
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-color: transparent transparent #333;
+  border-width: 5px;
+  position: absolute;
+  right: 11.5px;
+  top: 50%;
+  margin-top: -12.5px;
+  pointer-events: none;
+}
+.choices[data-type*=select-one]:after {
+  margin-top: 1.5px;
+}
+.choices[data-type*=select-one].is-open:after {
+  margin-top: 1.5px;
+  border-color: #333 transparent transparent;
+}
+
+.choices__inner,
+.is-open .choices__inner{
+  height: 58px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: 1.66px solid #becad6;
+  font-size: 20px;
+}
+.is-open .choices__inner {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.choices__list,
+.choices__list--dropdown .choices__item {
+  font-size: 20px;
 }

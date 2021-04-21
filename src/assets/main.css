@@ -1,6 +1,7 @@
 @import '~normalize.css';
 @import 'fonts.css';
 @import "~bootstrap";
+@import "~choices.js/public/assets/styles/choices.min.css";
 
 body {
     font-family: 'Roboto', sans-serif;
