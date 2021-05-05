@@ -58,11 +58,12 @@
                     <label for="form5">Location</label>
                     <input type="text" id="form5" placeholder="Location" required name="Location">
                 </fieldset>
+
                 <fieldset class="simple-form__block">
                     <div class="">
                         <label for="form6">State</label>
-                        <select type="text" id="form6" name="State">
-                            <option value="Choose one" selected>Choose one</option>
+                        <select type="text" id="form6" name="State" class="select__state">
+                            <option value="Choose one" selected disabled hidden>Choose one</option>
                             <option value="Alabama">Alabama</option>
                             <option value="Alaska">Alaska</option>
                             <option value="Arizona">Arizona</option>
@@ -79,7 +80,7 @@
                     </div>
                 </fieldset>
 
-                <button type="submit">Submit Form</button>
+                  <button type="submit">Submit Form</button>
             </form>
         </div>
     </div>
@@ -133,7 +134,7 @@
                 </fieldset>
             </div>
 
-            <div class="box-controls__block">
+            <div class="box-controls__block block__toggle">
                 <h4 class="box-controls__title title">Toggles</h4>
                 <fieldset class="box-controls__switch">
                     <input type="checkbox" id="toggle-btn1" class="toggle-btn" name="game" value="rockets">
@@ -153,42 +154,62 @@
                 </fieldset>
             </div>
         </div>
+
         <div class="controls__custom custom-controls">
+
             <fieldset class="custom-controls__box">
-            <label for="select1">Custom Dropdown</label>
-            <select type="text" name="set" id="select1" class="custom__select">
-                <option value="one">One</option>
-                <option value="two">Two</option>
-                <option value="three">Three</option>
-                <option value="four">Four</option>
-                <option value="five">Five</option>
-            </select>
+                <label for="select1">Custom Dropdown</label>
+                <select type="text" name="set" id="select1" class="js-choice">
+                    <option value="choose number" selected disabled hidden>Choose number</option>
+                    <option value="one">One number</option>
+                    <option value="two">Two number</option>
+                    <option value="three">Three number</option>
+                    <option value="four">Four number</option>
+                    <option value="five">Five number</option>
+                </select>
             </fieldset>
 
             <fieldset class="custom-controls__box">
-                <label for="input1">Custom File Input</label>
-                <input type="file" id="input1">
+                <h4>Custom File Input</h4>
+                <input type="file" id="input1" class="input__hidden">
+                <label for="input1" class="custom-control__input">Choose file ...</label>
             </fieldset>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="sliders">
+    <div class="container-sm">
+        <h2 class="slider__title title">Sliders</h2>
+        <p class="slider__subtitle subtitle">
+            Sliders are also a new custom control and can be integrated almost anywhere with
+            minimal markup (a single element) and extended customisation options via JavaScript.
+        </p>
+        <div class="slider__flexbox">
+            <div class="slider__body">
+                <div class="slider__filter" id="slider-start1"></div>
+            </div>
+            <div class="slider__body">
+                <div class="slider__filter" id="slider-start2"></div>
+            </div>
+            <div class="slider__body">
+                <div class="slider__filter" id="slider-start3"></div>
+            </div>
         </div>
     </div>
 </section>
-<section>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam asperiores aut blanditiis
-        corporis cumque distinctio dolore dolores eaque eum eveniet ex fugiat fugit harum id laudantium maiores
-        nemo non nostrum, pariatur placeat provident quibusdam, quo rem repellat similique suscipit totam,
-        veniam voluptas voluptatem? Enim est incidunt nemo porro. Doloribus, rem, sequi! Commodi ea eius enim
-        expedita fugiat mollitia tenetur voluptates. Aut culpa est fugiat itaque minus molestias nemo quidem
-        sequi tenetur voluptatum? Iste mollitia officia voluptatibus. Aliquam animi libero officiis possimus sit
-        tenetur? Accusamus consectetur, inventore! Ab, aut eligendi molestiae, nulla odio optio, perferendis possimus
-        sapiente suscipit temporibus vitae.</p>
-    <label for="111"></label>
-    <select name="" id="111">
-        <option value="man">man</option>
-        <option value="woman">woman</option>
-    </select>
-    <div class="block"></div>
+<section class="datepicker">
+    <div class="container-sm">
+        <h2 class="datepicker__title title">Datepickers</h2>
+        <p class="datepicker__subtitle subtitle">
+            Datepickers are also available and similar to slider controls they are <strong>very easy to create</strong>, being
+            based on a single input element. Datepickers are customisable as well, letting you create
+            complex configurations with range selections for example.
+        </p>
+    </div>
 </section>
-
 </body>
 </html>
 

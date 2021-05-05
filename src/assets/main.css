@@ -1,18 +1,12 @@
 @import '~normalize.css';
 @import 'fonts.css';
-@import "~bootstrap";
-@import "~choices.js/public/assets/styles/choices.min.css";
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~choices.js/public/assets/styles/choices.min.css';
+@import '~nouislider/distribute/nouislider.css';
 
 body {
     font-family: 'Roboto', sans-serif;
 }
-/*.container {*/
-/*    background-color: #a6b4a9;*/
-/*    padding: 100px;*/
-/*    max-width: 1000px;*/
-/*    margin: 0 auto;*/
-/*    text-align: center;*/
-/*}*/
 
 .image {
     background: url("../assets/panda.png");
